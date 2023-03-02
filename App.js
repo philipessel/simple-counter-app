@@ -1,24 +1,34 @@
 
-
-
-
-import { useState } from "react";
+import Joke from "./Practice/Joke";
+import Cart from "./Practice/Cart";
+import Counterpage from "./Practice/Counterpage";
+import Numbers from "./Practice/Numbers";
 
 function App() {
-  const [value, setValue] = useState(0)
+
 
   return (
 
     <>
-      <div id="parent">
+      <Counterpage />
 
-        <h1> Simple Counter App </h1>
-        <p>Counter - {value}</p>
-        <button className="btn" onClick={() => setValue(0)}> Reset </button>
-        <button className="btn" onClick={() => setValue(value + 5)}> Increment </button>
-        <button className="btn" onClick={() => setValue(value - 5)}> Decrement </button>
+      <Cart
+        name="philip"
+        age="20"
+        school="oda"
+        country="ghana"
+      />
 
-      </div>
+      <Joke
+        setup=" my favor"
+        punchline="oh my favor. so good is my favor. i am a favor. a favor with so much favor. so dome a favor"
+      />
+
+      <Numbers />
+
+
+
+
     </>
 
   );

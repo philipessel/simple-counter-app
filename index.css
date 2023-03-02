@@ -49,3 +49,12 @@
    height: 25px;
    border-color: lightgrey;
  }
+
+
+
+
+ .Cart-background {
+   background-color: springgreen;
+   width: 50%;
+   height: 300px;
+ }
